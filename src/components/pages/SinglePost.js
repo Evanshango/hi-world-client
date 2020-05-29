@@ -45,10 +45,10 @@ function SinglePost(props) {
     } else {
         const {id, body, createdAt, username, likes, comments, likeCount, commentCount} = data.getPost
         postMarkup = (
-            <Grid>
+            <Grid stackable>
                 <Grid.Row>
                     <Grid.Column width={2}>
-                        <Image floated='right' size='small'
+                        <Image floated='left' size='small'
                                src='https://react.semantic-ui.com/images/avatar/large/jenny.jpg'
                                style={{borderRadius: '50%'}}/>
                     </Grid.Column>
